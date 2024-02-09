@@ -1,3 +1,11 @@
+# Installation
+```npm i syn-generate-ids```
+
+# Usage (all parameters are optional)
+```ng g syn-generate-ids:generate-ids --prefix=settings-feature-ids --path=src/app/modules/layout --elements=h1,p```
+
+
+
 ### Publish with private namespace
 ```npm --no-git-tag-version version minor```
 
