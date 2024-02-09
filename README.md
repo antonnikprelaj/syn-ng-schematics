@@ -1,3 +1,8 @@
+### Publish with private namespace
+```npm publish --access=public```
+```npm init --scope=synergy```
+
+
 # Getting Started With Schematics
 
 This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
