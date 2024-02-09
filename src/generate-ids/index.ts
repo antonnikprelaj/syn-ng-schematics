@@ -105,9 +105,10 @@ export function projectName(_options: ModulePrefixModel): Rule {
         // const modulePrefix = 'checklist-ids';
         const modulePrefix = _options.prefix;
         const pathFromOptions = _options.path;
+        const elementsFromOptions = _options.elements;
 
         const check = 'id';  // choose attribute inside tag for generating string(in this case id)
-        const elements = [
+        let elements = [
             'syn-autocomplete-input',
             'div',
             'p',
@@ -167,6 +168,13 @@ export function projectName(_options: ModulePrefixModel): Rule {
             'md-history-table',
             'transaction-editor-directive'
         ]; // choose tags that will be checked for id(in this case it's `a` tag')
+
+        if (elementsFromOptions) {
+            elements = elementsFromOptions.split(',');
+            console.log('\x1b[33m%s\x1b[0m', 'elementsFromOptions'); // Yellow
+            console.log('\x1b[33m%s\x1b[0m', elements); // Yellow
+        }
+
         const platform = 'web';
         // const autofix: true,  // if script finds element without id, then she will add id
 

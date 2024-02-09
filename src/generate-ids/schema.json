@@ -6,12 +6,17 @@
   "properties": {
     "prefix": {
       "type": "string",
-      "description": "Prefix of module name (Optional)",
+      "description": "Prefix of module name (Optional) - Example: --prefix=settings-feature-ids",
       "x-prompt": "Enter the module prefix:"
     },
     "path": {
       "type": "string",
-      "description": "Path",
+      "description": "Example: --path=src/app/nested-html/nested-html-level-2",
+      "x-prompt": "Enter the path:"
+    },
+    "elements": {
+      "type": "string",
+      "description": "Example: --elements=h1,p",
       "x-prompt": "Enter the path:"
     }
   }
