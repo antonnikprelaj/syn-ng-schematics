@@ -1,3 +1,10 @@
+Local dev
+
+```
+nvm use 18
+npm i --legacy-peer-deps
+```
+
 Run using Angular CLI
 ```ng g generate-ids:generate-ids --prefix=settings-feature-ids --path=src/app/modules/layout```
 
@@ -14,6 +21,8 @@ How to install and run on an actual Angular project
 
 Run from local directory
 schematics /Users/anton/git/ng-web/generate-ids/src/collection.json:generate-ids --dry-run=false --prefix=settings-feature-ids --project ng-web
+
+npm i git+https://github.com/antonnikprelaj/test-id-generator-angular-schematic.git --legacy-peer-deps
 
 npm i git+https://github.com/antonnikprelaj/test-id-generator-angular-schematic.git --legacy-peer-deps
 
