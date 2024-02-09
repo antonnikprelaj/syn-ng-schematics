@@ -1,5 +1,5 @@
 {
-  "name": "generate-ids",
+  "name": "syn-generate-ids",
   "version": "1.0.0",
   "description": "A blank schematics",
   "scripts": {
