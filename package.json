@@ -1,6 +1,6 @@
 {
   "name": "generate-ids",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -9,6 +9,10 @@
     "build:schematics": "tsc -p tsconfig.json",
     "copy:schematics": "cpr src dist/lib/schematics --deleteFirst",
     "build:lib": "ng-packagr -p package.json && npm run build:schematics && npm run copy:schematics"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonnikprelaj/syn-ng-schematics.git"
   },
   "keywords": [
     "schematics"
