@@ -1,5 +1,6 @@
 ### Publish with private namespace
 ```npm --no-git-tag-version version minor```
+
 ```npm publish --access=public```
 
 ```npm init --scope=synergy```

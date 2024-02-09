@@ -1,5 +1,5 @@
 {
-  "name": "@synergy/schematics",
+  "name": "syn-generate-ids",
   "version": "1.1.0",
   "description": "A blank schematics",
   "scripts": {
