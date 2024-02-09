@@ -1,0 +1,22 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "generate-ids": {
+      "description": "A blank schematic.",
+      "factory": "./generate-ids/index#projectName",
+      "schema": "./generate-ids/schema.json"
+    }
+  },
+  "properties": {
+    "prefix": {
+      "type": "string",
+      "description": "Prefix of module name (Optional)",
+      "x-prompt": "Enter the module prefix:"
+    },
+    "path": {
+      "type": "string",
+      "description": "Path",
+      "x-prompt": "Enter the path:"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<div>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h1 id="web-h1-settings-feature-ids-09s54aggtedtt3t" class="md-headline">Autocomplete</h1>
+            </mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            Autocomplete 1: (preset data and without template)
+            <syn-autocomplete-input
+                [callbackFunction]="myCallbackFunction1.bind(this)"
+                [placeholder]="placeholder1"
+                [(selectedObject)]="selectedObject1"
+                [fieldName]="fieldName1">
+            </syn-autocomplete-input>
+            Autocomplete 2: (template1)
+            <syn-autocomplete-input
+                [callbackFunction]="myCallbackFunction2.bind(this)"
+                [placeholder]="placeholder2"
+                [(selectedObject)]="selectedObject2"
+                [fieldName]="fieldName2"
+                [itemTemplate]="itemTemplate2"
+                [itemTemplateInputs]="itemTemplateInputs2">
+            </syn-autocomplete-input>
+            Autocomplete 3: (template2)
+            <syn-autocomplete-input
+                [callbackFunction]="myCallbackFunction3.bind(this)"
+                [placeholder]="placeholder3"
+                [(selectedObject)]="selectedObject3"
+                [fieldName]="fieldName3"
+                [itemTemplate]="itemTemplate3"
+                [itemTemplateInputs]="itemTemplateInputs3">
+            </syn-autocomplete-input>
+            Autocomplete 4: (disabled)
+            <syn-autocomplete-input
+                [isDisabled]="isDisabled4"
+                [callbackFunction]="myCallbackFunction4.bind(this)"
+                [placeholder]="placeholder4"
+                [(selectedObject)]="selectedObject4"
+                [fieldName]="fieldName4"
+                [itemTemplate]="itemTemplate4"
+                [itemTemplateInputs]="itemTemplateInputs4">
+            </syn-autocomplete-input>
+            Autocomplete 5:
+            <syn-autocomplete-input
+                [callbackFunction]="myCallbackFunction5.bind(this)"
+                [placeholder]="autocomplete5.placeholder"
+                [(selectedObject)]="autocomplete5.selectedObject"
+                [fieldName]="autocomplete5.fieldName">
+            </syn-autocomplete-input>
+        </mat-card-content>
+    </mat-card>
+</div>

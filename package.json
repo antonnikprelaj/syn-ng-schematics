@@ -1,0 +1,32 @@
+{
+  "name": "generate-ids",
+  "version": "0.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && jasmine src/**/*_spec.js",
+    "alternate": "./generate-ids && tsc -p tsconfig.schematics.json",
+    "build:schematics": "tsc -p tsconfig.json",
+    "copy:schematics": "cpr src dist/lib/schematics --deleteFirst",
+    "build:lib": "ng-packagr -p package.json && npm run build:schematics && npm run copy:schematics"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^17.0.9",
+    "@angular-devkit/schematics": "^17.0.9",
+    "@angular/core": "^17.0.9",
+    "typescript": "~5.2.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "~5.1.0",
+    "@types/node": "^18.18.0",
+    "cpr": "^3.0.1",
+    "jasmine": "^5.0.0",
+    "ng-packagr": "^17.1.2"
+  }
+}

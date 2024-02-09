@@ -1,0 +1,15 @@
+<div *ngIf="dataLoaded">
+    <syn-notification-banner></syn-notification-banner>
+    <syn-header></syn-header>
+
+    <syn-breadcrumbs></syn-breadcrumbs>
+</div>
+
+<div *ngIf="skeletonLoader$ | async" class="syn-padding-24">
+    <syn-skeleton width="10"></syn-skeleton>
+    <syn-skeleton width="20"></syn-skeleton>
+    <syn-skeleton width="50"></syn-skeleton>
+    <syn-skeleton width="70"></syn-skeleton>
+    <syn-skeleton></syn-skeleton>
+</div>
+<router-outlet [ngClass]="{ 'hide-router-outlet-content': (skeletonLoader$ | async) }"></router-outlet>
